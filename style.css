@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffe6f0; /* Light pink */
+    color: #880d1e; /* Deep red */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff0f5; /* Light blush */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: #d62839; /* Bright red */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#capsule-entries {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #f48fb1; /* Light pink border */
+    border-radius: 5px;
+}
+
+.capsule-entry {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #c9184a; /* Medium red */
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #f48fb1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #d62839; /* Bright red button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a71d31; /* Darker red */
+}
