@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little Love Capsule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Little Love Capsule</h1>
+        <div id="capsule-entries">
+            </div>
+        <h2>Add a New Memory</h2>
+        <form id="new-entry-form">
+            <label for="memory-text">Memory/Message:</label><br>
+            <textarea id="memory-text" name="memory-text" rows="4" cols="50"></textarea><br><br>
+            <button type="button" onclick="addEntry()">Add to Capsule</button>
+        </form>
+    </div>
+
+    <script>
+        function addEntry() {
+            const memoryText = document.getElementById("memory-text").value;
+            if (memoryText.trim() !== "") {
+                const entriesDiv = document.getElementById("capsule-entries");
+                const newEntry = document.createElement("div");
+                newEntry.classList.add("capsule-entry");
+                newEntry.textContent = memoryText;
+                entriesDiv.prepend(newEntry); // Add to the top
+                document.getElementById("memory-text").value = ""; // Clear the form
+            }
+        }
+    </script>
+</body>
+</html>
